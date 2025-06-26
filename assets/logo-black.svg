@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+  <style>
+    .logo-parts {
+      fill: black;
+    }
+  </style>
+  <g>
+    <!-- Upper part (LIFE) -->
+    <path class="logo-parts" d="M20 30h50v15H20v-15zm0 50h15v50H20v-50zm90 0h15v50h-15v-50zm40-50h50v15h-50v-15zm0 35h40v15h-40v-15zm0 35h40v15h-40v-15zm110-70h15v50h-15v-50zm35 0h15v50h-15v-50zm-20 65a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/>
+    
+    <!-- Lower part (ПИТЕР) -->
+    <path class="logo-parts" d="M20 150h15v50H20v-50zm35 0h15v50H55v-50zm-10 0h-25v15h25v-15zm-25 35h25v15h-25v-15zm55-35h15v50h-15v-50zm35 0v15h10v35h15v-35h10v-15h-35zm55 0h15l15 25v-25h15v50h-15l-15-25v25h-15v-50zm70 0h15v50h-15v-50zm35 0h15v50h-15v-50zm-25 25v-25h50v50h-15v-25h-35z"/>
+  </g>
+</svg>

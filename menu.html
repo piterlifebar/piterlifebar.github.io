@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Меню - ПИТЕР LIFE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="t-main-content">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/"><img src="assets/logo-white.png" alt="Питер Life"></a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="afisha.html">Афиша</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="menu.html" class="active">Меню</a></li>
+                    <li><a href="index.html#bar-section">Наш бар</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li class="phone"><a href="tel:+79187589991">+7 (918) 758-99-91</a></li>
+                </ul>
+            </nav>
+            <button class="reserve-btn primary-btn">Забронировать стол</button>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>МЕНЮ</h1>
+        </div>
+    </section>
+
+    <section class="menu-page">
+        <div class="menu-container">
+            <div class="menu-intro">
+                <h2>НАША ГАСТРОНОМИЯ</h2>
+                <p>Современная кухня, сочетающая техасские традиции копчения, азиатский стритфуд и классические блюда в уникальной интерпретации нашего Шефа</p>
+            </div>
+            
+            <div class="menu-nav">
+                <ul>
+                    <li><a href="#starters" class="active">Закуски</a></li>
+                    <li><a href="#salads">Салаты</a></li>
+                    <li><a href="#mains">Основные блюда</a></li>
+                    <li><a href="#desserts">Десерты</a></li>
+                    <li><a href="#cocktails">Коктейли</a></li>
+                    <li><a href="#hookah">Кальяны</a></li>
+                </ul>
+            </div>
+            
+            <div id="starters" class="menu-section">
+                <h2>ЗАКУСКИ</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Тартар из говядины</h3>
+                            <span class="price">590 ₽</span>
+                        </div>
+                        <p class="description">Филе говядины, каперсы, корнишоны, красный лук, соус "Ворчестер", дижонская горчица, трюфельное масло, перепелиное яйцо, крем из пармезана</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Брускетта с авокадо и креветками</h3>
+                            <span class="price">520 ₽</span>
+                        </div>
+                        <p class="description">Тигровые креветки, авокадо, томаты черри, микс салатов, соус на основе сливочного сыра, хрустящая чиабатта</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Хумус с питой</h3>
+                            <span class="price">380 ₽</span>
+                        </div>
+                        <p class="description">Нежный хумус из нута, кунжутная паста тахини, оливковое масло, свежая пита</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Мясное ассорти</h3>
+                            <span class="price">860 ₽</span>
+                        </div>
+                        <p class="description">Ростбиф, пастрами, прошутто, салями, домашняя горчица, хрустящие гренки</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="salads" class="menu-section">
+                <h2>САЛАТЫ</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Салат с тунцом</h3>
+                            <span class="price">640 ₽</span>
+                        </div>
+                        <p class="description">Свежий тунец, авокадо, листья салата, сладкие томаты, кунжут, азиатская заправка с соевым соусом и кунжутным маслом</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Тёплый салат с ростбифом</h3>
+                            <span class="price">680 ₽</span>
+                        </div>
+                        <p class="description">Слайсы ростбифа медиум, микс салатов, томаты черри, красный лук, соус на основе дижонской горчицы и бальзамического крема</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Теплый салат с морепродуктами</h3>
+                            <span class="price">760 ₽</span>
+                        </div>
+                        <p class="description">Тигровые креветки, кальмар, мидии, осьминог, микс салатов, томаты черри, цитрусовая заправка</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Цезарь с курицей</h3>
+                            <span class="price">520 ₽</span>
+                        </div>
+                        <p class="description">Куриное филе, салат романо, соус "Цезарь", хрустящие гренки, томаты черри, пармезан</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="mains" class="menu-section">
+                <h2>ОСНОВНЫЕ БЛЮДА</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Копченые говяжьи ребра</h3>
+                            <span class="price">980 ₽</span>
+                        </div>
+                        <p class="description">Томленые в техасском стиле говяжьи ребра, домашний BBQ соус, картофельное пюре с трюфельным маслом</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Стейк Рибай</h3>
+                            <span class="price">1480 ₽</span>
+                        </div>
+                        <p class="description">Стейк из мраморной говядины, запеченный картофель с розмарином, соус "Деми-гляс"</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Лосось с овощами</h3>
+                            <span class="price">920 ₽</span>
+                        </div>
+                        <p class="description">Филе лосося, обжаренное на гриле, с овощами и соусом из белого вина</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Бао с копченой утиной грудкой</h3>
+                            <span class="price">560 ₽</span>
+                        </div>
+                        <p class="description">Паровые булочки бао с копченой утиной грудкой, сливочным сыром, огурцом и соусом хойсин</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="desserts" class="menu-section">
+                <h2>ДЕСЕРТЫ</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Чизкейк Нью-Йорк</h3>
+                            <span class="price">380 ₽</span>
+                        </div>
+                        <p class="description">Классический чизкейк на песочной основе с ягодным соусом</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Шоколадный фондан</h3>
+                            <span class="price">420 ₽</span>
+                        </div>
+                        <p class="description">Шоколадный кекс с жидкой начинкой, подается с шариком ванильного мороженого и свежими ягодами</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Тирамису</h3>
+                            <span class="price">390 ₽</span>
+                        </div>
+                        <p class="description">Итальянский десерт на основе маскарпоне с бисквитным печеньем савоярди, пропитанным кофе и ликером</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="cocktails" class="menu-section">
+                <h2>КОКТЕЙЛИ</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Питер Сприц</h3>
+                            <span class="price">520 ₽</span>
+                        </div>
+                        <p class="description">Авторский коктейль на основе аперитивов с добавлением просекко и свежих ягод</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Белая ночь</h3>
+                            <span class="price">580 ₽</span>
+                        </div>
+                        <p class="description">Джин, ликер блю кюрасао, тоник, лимонный сок, сироп маракуйя</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Невский Олд Фэшн</h3>
+                            <span class="price">620 ₽</span>
+                        </div>
+                        <p class="description">Бурбон, биттер Ангостура, апельсиновая цедра, тростниковый сахар, копченое яблоко</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Московский мул</h3>
+                            <span class="price">520 ₽</span>
+                        </div>
+                        <p class="description">Водка, имбирный эль, сок лайма, свежий имбирь, мята</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="hookah" class="menu-section">
+                <h2>КАЛЬЯНЫ</h2>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Классический кальян</h3>
+                            <span class="price">1200 ₽</span>
+                        </div>
+                        <p class="description">Традиционный кальян на классической чаше с табаком на выбор: ягодные, фруктовые, десертные вкусы</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Премиум кальян</h3>
+                            <span class="price">1500 ₽</span>
+                        </div>
+                        <p class="description">Кальян с премиальными сортами табака, усиленной чашей и возможностью миксовать до трех вкусов</p>
+                    </div>
+                    
+                    <div class="menu-item">
+                        <div class="menu-item-header">
+                            <h3>Фруктовый кальян</h3>
+                            <span class="price">1700 ₽</span>
+                        </div>
+                        <p class="description">Кальян с чашей из свежего фрукта (яблоко, ананас, грейпфрут) с усилением вкуса и аромата</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>ГОЛОДНЫ? ХОТИТЕ ПОПРОБОВАТЬ НАШИ БЛЮДА?</h2>
+            <p>Забронируйте стол прямо сейчас</p>
+            <a href="#tablereservation" class="reserve-btn">ЗАБРОНИРОВАТЬ СТОЛ</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/logo-white.png" alt="Питер LIFE">
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p>Телефон: <a href="tel:+79187589991">+7 (918) 758-99-91</a></p>
+                <p>Email: <a href="mailto:info@piterlife.ru">info@piterlife.ru</a></p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 ПИТЕР LIFE. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Забронировать стол</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <input type="hidden" id="modal-bar-select" name="bar" value="piter-life">
+                    <input type="text" name="bar-name" value="Питер Life" readonly class="readonly-input">
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Телефон</label>
+                    <div class="phone-input">
+                        <span class="phone-prefix">+7</span>
+                        <input type="tel" id="modal-phone" name="phone" placeholder="(___) ___ __ __" required>
+                    </div>
+                </div>
+                <button type="submit" class="reserve-btn">Забронировать</button>
+                <p class="privacy-notice">Нажимая кнопку «Забронировать», вы даёте согласие на обработку ваших персональных данных.</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Smooth scrolling for menu navigation
+            const menuLinks = document.querySelectorAll('.menu-nav a');
+            
+            menuLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Remove active class from all links
+                    menuLinks.forEach(item => item.classList.remove('active'));
+                    
+                    // Add active class to clicked link
+                    this.classList.add('active');
+                    
+                    const targetId = this.getAttribute('href');
+                    const targetSection = document.querySelector(targetId);
+                    
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 100,
+                        behavior: 'smooth'
+                    });
+                });
+            });
+            
+            // Update active menu item on scroll
+            window.addEventListener('scroll', function() {
+                const sections = document.querySelectorAll('.menu-section');
+                let currentSection = '';
+                
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 120;
+                    const sectionHeight = section.clientHeight;
+                    
+                    if (window.pageYOffset >= sectionTop && window.pageYOffset < sectionTop + sectionHeight) {
+                        currentSection = '#' + section.getAttribute('id');
+                    }
+                });
+                
+                menuLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href') === currentSection) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>

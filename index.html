@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ПИТЕР LIFE - Гастрономическая тусовка</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 999;
+            padding-top: 60px;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.9);
+        }
+        .modal-content {
+            margin: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 80%;
+        }
+        .modal-content img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 35px;
+            color: #fff;
+            font-size: 40px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .modal-controls {
+            margin-top: 10px;
+        }
+        .modal-controls button {
+            background: #fff;
+            border: none;
+            padding: 10px;
+            margin: 0 10px;
+            font-size: 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header id="t-main-content">
+        <div class="navbar">
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="#events">Афиша</a></li>
+                    <li><a href="assets/menu.png">Меню</a></li>
+                    <li><a href="rent.html">Праздники</a></li>
+                    <li class="phone"><a href="tel:+79187589991">+7 (918) 758-99-91</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+    
+<section class="hero">
+    <video autoplay muted loop playsinline class="background-video">
+        <source src="assets/hero-party.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="hero-content">
+        <div class="hero-logo">
+            <div class="logo-repeat">
+                <img src="assets/logo-life.png" alt="Питер LIFE">
+            </div>
+        </div>
+        <div class="hero-text">
+            <h1>ГАСТРОНОМИЧЕСКАЯ</h1>
+            <h2>ТУСОВКА</h2>
+            <a href="https://wa.me/79187589991" target="_blank" class="reserve-btn" >ЗАБРОНИРОВАТЬ</a>
+            <a href="https://eda.yandex.ru/restaurant/piter_life_hg7s8" class="deliviry-btn">
+                <i class="fa-brands fa-yandex"></i> Доставка
+            </a>
+        </div>
+    </div>
+</section>
+<section class="loops" style="offset: 5px;">
+    <div class="loop-strip"></div>
+
+</section>
+<section class="guest-gallery">
+    <h2>ГОСТИ И ВЕЧЕРИНКИ</h2>
+
+</section>
+    <section class="party-carousel">
+        <div class="carousel-wrapper">
+            <div class="carousel">
+                <img src="https://i1.photo.2gis.com/photo-gallery/f8b2abaf-966d-4f29-b68f-5acbc83d039a.jpg" alt="Гость 1">
+                <img src="https://i7.photo.2gis.com/photo-gallery/fbb738be-cdbc-4a32-81c4-0c08635af1d8.jpg" alt="Гость 2">
+                <img src="https://i4.photo.2gis.com/photo-gallery/02ee11c6-7b4c-4bc7-8a7e-e5b1b146a8a7.jpg" alt="Гость 3">
+                <img src="https://i2.photo.2gis.com/photo-gallery/76264183-7ff5-4f38-b94a-e83060a2f4b4.jpg" alt="Гость 4">
+                <img src="https://i3.photo.2gis.com/photo-gallery/68e30711-fc2e-47d9-b763-923862ec5ba7.jpg" alt="Гость 5">
+                <img src="https://i6.photo.2gis.com/photo-gallery/fb2fe08d-1217-43eb-a2f1-176d68b6fd05.jpg" alt="Гость 6">
+                <img src="https://i2.photo.2gis.com/photo-gallery/0abe07e3-1f67-4349-918d-3e455da00edf.jpg" alt="Гость 7">
+                <img src="https://i5.photo.2gis.com/photo-gallery/dc98d8f0-1cf9-41da-9800-89b133d7db87.jpg" alt="Гость 8">
+                <img src="https://i6.photo.2gis.com/photo-gallery/7a11f339-09a4-471b-a044-ff2fc814ff25.jpg" alt="Гость 9">
+                <img src="https://i4.photo.2gis.com/photo-gallery/97091d31-6636-435a-b86a-8e76ae342ed2.jpg" alt="Гость 10">
+                <img src="https://i1.photo.2gis.com/photo-gallery/f8b2abaf-966d-4f29-b68f-5acbc83d039a.jpg" alt="Гость 1">
+                <img src="https://i7.photo.2gis.com/photo-gallery/fbb738be-cdbc-4a32-81c4-0c08635af1d8.jpg" alt="Гость 2">
+                <img src="https://i4.photo.2gis.com/photo-gallery/02ee11c6-7b4c-4bc7-8a7e-e5b1b146a8a7.jpg" alt="Гость 3">
+                <img src="https://i2.photo.2gis.com/photo-gallery/76264183-7ff5-4f38-b94a-e83060a2f4b4.jpg" alt="Гость 4">
+                <img src="https://i3.photo.2gis.com/photo-gallery/68e30711-fc2e-47d9-b763-923862ec5ba7.jpg" alt="Гость 5">
+                <img src="https://i6.photo.2gis.com/photo-gallery/fb2fe08d-1217-43eb-a2f1-176d68b6fd05.jpg" alt="Гость 6">
+                <img src="https://i2.photo.2gis.com/photo-gallery/0abe07e3-1f67-4349-918d-3e455da00edf.jpg" alt="Гость 7">
+                <img src="https://i5.photo.2gis.com/photo-gallery/dc98d8f0-1cf9-41da-9800-89b133d7db87.jpg" alt="Гость 8">
+                <img src="https://i6.photo.2gis.com/photo-gallery/7a11f339-09a4-471b-a044-ff2fc814ff25.jpg" alt="Гость 9">
+                <img src="https://i4.photo.2gis.com/photo-gallery/97091d31-6636-435a-b86a-8e76ae342ed2.jpg" alt="Гость 10">
+                <img src="https://i1.photo.2gis.com/photo-gallery/f8b2abaf-966d-4f29-b68f-5acbc83d039a.jpg" alt="Гость 1">
+                <img src="https://i7.photo.2gis.com/photo-gallery/fbb738be-cdbc-4a32-81c4-0c08635af1d8.jpg" alt="Гость 2">
+                <img src="https://i4.photo.2gis.com/photo-gallery/02ee11c6-7b4c-4bc7-8a7e-e5b1b146a8a7.jpg" alt="Гость 3">
+                <img src="https://i2.photo.2gis.com/photo-gallery/76264183-7ff5-4f38-b94a-e83060a2f4b4.jpg" alt="Гость 4">
+                <img src="https://i3.photo.2gis.com/photo-gallery/68e30711-fc2e-47d9-b763-923862ec5ba7.jpg" alt="Гость 5">
+                <img src="https://i6.photo.2gis.com/photo-gallery/fb2fe08d-1217-43eb-a2f1-176d68b6fd05.jpg" alt="Гость 6">
+                <img src="https://i2.photo.2gis.com/photo-gallery/0abe07e3-1f67-4349-918d-3e455da00edf.jpg" alt="Гость 7">
+                <img src="https://i5.photo.2gis.com/photo-gallery/dc98d8f0-1cf9-41da-9800-89b133d7db87.jpg" alt="Гость 8">
+                <img src="https://i6.photo.2gis.com/photo-gallery/7a11f339-09a4-471b-a044-ff2fc814ff25.jpg" alt="Гость 9">
+                <img src="https://i4.photo.2gis.com/photo-gallery/97091d31-6636-435a-b86a-8e76ae342ed2.jpg" alt="Гость 10">
+                <img src="https://i1.photo.2gis.com/photo-gallery/f8b2abaf-966d-4f29-b68f-5acbc83d039a.jpg" alt="Гость 1">
+                <img src="https://i7.photo.2gis.com/photo-gallery/fbb738be-cdbc-4a32-81c4-0c08635af1d8.jpg" alt="Гость 2">
+                <img src="https://i4.photo.2gis.com/photo-gallery/02ee11c6-7b4c-4bc7-8a7e-e5b1b146a8a7.jpg" alt="Гость 3">
+                <img src="https://i2.photo.2gis.com/photo-gallery/76264183-7ff5-4f38-b94a-e83060a2f4b4.jpg" alt="Гость 4">
+                <img src="https://i3.photo.2gis.com/photo-gallery/68e30711-fc2e-47d9-b763-923862ec5ba7.jpg" alt="Гость 5">
+                <img src="https://i6.photo.2gis.com/photo-gallery/fb2fe08d-1217-43eb-a2f1-176d68b6fd05.jpg" alt="Гость 6">
+                <img src="https://i2.photo.2gis.com/photo-gallery/0abe07e3-1f67-4349-918d-3e455da00edf.jpg" alt="Гость 7">
+                <img src="https://i5.photo.2gis.com/photo-gallery/dc98d8f0-1cf9-41da-9800-89b133d7db87.jpg" alt="Гость 8">
+                <img src="https://i6.photo.2gis.com/photo-gallery/7a11f339-09a4-471b-a044-ff2fc814ff25.jpg" alt="Гость 9">
+                <img src="https://i4.photo.2gis.com/photo-gallery/97091d31-6636-435a-b86a-8e76ae342ed2.jpg" alt="Гость 10">
+
+            </div>
+            <div class="carousel-wrapper">
+                <div class="carousel-mini">
+                    <img src="https://images2.imgbox.com/61/7f/huj5JJp3_o.jpg" alt="Гость 1">
+                    <img src="assets/int.jpg" alt="Гость 2">
+                    <img src="assets/wall.jpg" alt="Гость 3">
+                    <img src="assets/pincil.jpg" alt="Гость 4">
+                    <img src="assets/xaxa.jpg" alt="Гость 5">
+                    <img src="assets/sran.jpg" alt="Гость 6">
+                    <img src="https://images2.imgbox.com/61/7f/huj5JJp3_o.jpg" alt="Гость 1">
+                    <img src="assets/int.jpg" alt="Гость 2">
+                    <img src="assets/wall.jpg" alt="Гость 3">
+                    <img src="assets/pincil.jpg" alt="Гость 4">
+                    <img src="assets/xaxa.jpg" alt="Гость 5">
+                    <img src="assets/sran.jpg" alt="Гость 6">
+                    <img src="https://images2.imgbox.com/61/7f/huj5JJp3_o.jpg" alt="Гость 1">
+                    <img src="assets/int.jpg" alt="Гость 2">
+                    <img src="assets/wall.jpg" alt="Гость 3">
+                    <img src="assets/pincil.jpg" alt="Гость 4">
+                    <img src="assets/xaxa.jpg" alt="Гость 5">
+                    <img src="assets/sran.jpg" alt="Гость 6">
+                    <img src="https://images2.imgbox.com/61/7f/huj5JJp3_o.jpg" alt="Гость 1">
+                    <img src="assets/int.jpg" alt="Гость 2">
+                    <img src="assets/wall.jpg" alt="Гость 3">
+                    <img src="assets/pincil.jpg" alt="Гость 4">
+                    <img src="assets/xaxa.jpg" alt="Гость 5">
+                    <img src="assets/sran.jpg" alt="Гость 6">
+                    <img src="https://images2.imgbox.com/61/7f/huj5JJp3_o.jpg" alt="Гость 1">
+                    <img src="assets/int.jpg" alt="Гость 2">
+                    <img src="assets/wall.jpg" alt="Гость 3">
+                    <img src="assets/pincil.jpg" alt="Гость 4">
+                    <img src="assets/xaxa.jpg" alt="Гость 5">
+                    <img src="assets/sran.jpg" alt="Гость 6">
+                    <img src="https://images2.imgbox.com/61/7f/huj5JJp3_o.jpg" alt="Гость 1">
+                    <img src="assets/int.jpg" alt="Гость 2">
+                    <img src="assets/wall.jpg" alt="Гость 3">
+                    <img src="assets/pincil.jpg" alt="Гость 4">
+                    <img src="assets/xaxa.jpg" alt="Гость 5">
+                    <img src="assets/sran.jpg" alt="Гость 6">
+                    <img src="https://images2.imgbox.com/61/7f/huj5JJp3_o.jpg" alt="Гость 1">
+                    <img src="assets/int.jpg" alt="Гость 2">
+                    <img src="assets/wall.jpg" alt="Гость 3">
+                    <img src="assets/pincil.jpg" alt="Гость 4">
+                    <img src="assets/xaxa.jpg" alt="Гость 5">
+                    <img src="assets/sran.jpg" alt="Гость 6">
+                    <img src="https://images2.imgbox.com/61/7f/huj5JJp3_o.jpg" alt="Гость 1">
+                    <img src="assets/int.jpg" alt="Гость 2">
+                    <img src="assets/wall.jpg" alt="Гость 3">
+                    <img src="assets/pincil.jpg" alt="Гость 4">
+                    <img src="assets/xaxa.jpg" alt="Гость 5">
+                    <img src="assets/sran.jpg" alt="Гость 6">
+                </div>
+                <section class="party-carousel">
+                </section>
+    <!-- div class="gallery-grid">
+        <img src="https://i1.photo.2gis.com/photo-gallery/f8b2abaf-966d-4f29-b68f-5acbc83d039a.jpg" alt="Гость 1">
+        <img src="https://i7.photo.2gis.com/photo-gallery/fbb738be-cdbc-4a32-81c4-0c08635af1d8.jpg" alt="Гость 2">
+        <img src="https://i4.photo.2gis.com/photo-gallery/02ee11c6-7b4c-4bc7-8a7e-e5b1b146a8a7.jpg" alt="Гость 3">
+        <img src="https://i2.photo.2gis.com/photo-gallery/76264183-7ff5-4f38-b94a-e83060a2f4b4.jpg" alt="Гость 4">
+        <img src="https://i3.photo.2gis.com/photo-gallery/68e30711-fc2e-47d9-b763-923862ec5ba7.jpg" alt="Гость 5">
+        <img src="https://i6.photo.2gis.com/photo-gallery/fb2fe08d-1217-43eb-a2f1-176d68b6fd05.jpg" alt="Гость 6">
+    </div -->
+</section>
+
+    <section class="events" id="events">
+        <div class="events-container">
+            <div class="event-notice">
+                <div class="arrow-down">
+                    <i class="fas fa-chevron-down"></i>
+                </div>
+            </div>
+            <div class="events-wrapper">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="assets/1i.jpg" alt="">
+                    </div>
+                    <div class="event-info">
+                        <h3>День защиты детей</h3>
+                        <p></p>
+                        <p class="event-date" style="font-size: 30px;">1 ИЮНЯ</p>
+                        <p class="event-time">12:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="events-wrapper">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="assets/6i.jpg" alt="">
+                    </div>
+                    <div class="event-info">
+                        <h3>Открытие летней веранды</h3>
+                        <p>DJ 7EVEN & МС МИХАИЛ МКРТЧАН</p>
+                        <p class="event-date" style="font-size: 30px;">6 ИЮНЯ</p>
+                        <p class="event-time">19:00</p>
+                    </div>
+                </div>
+            </div>
+            <div class="events-wrapper">
+                <div class="event-card">
+                    <div class="event-image">
+                        <img src="assets/6it.jpg" alt="">
+                    </div>
+                    <div class="event-info">
+                        <h3>ОПГ "TURBO"</h3>
+                        <p>Лучшая кавер-группа Юга России</p>
+                        <p class="event-date" style="font-size: 30px;">6 ИЮНЯ</p>
+                        <p class="event-time">22:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center;">
+        <a href="#tablereservation" class="reserve-btn" style="margin-top: 20px;
+            padding: 15px 30px;
+            background: #ff0066;
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 1.2rem;
+            cursor: pointer;
+            animation: pulse 2s infinite;">ЗАБРОНИРОВАТЬ</a>
+        </div>
+    </section>
+
+    <h2>Меню</h2>
+    <img src="/assets/menu.png" onclick="window.location.href='/assets/menu.png'" style="cursor: pointer;">
+
+
+    <section class="specials">
+        <div class="specials-container">
+            <div class="specials-header">
+                <h2>Форматы мероприятий</h2>
+                <p>Малый зал на 30 чел · Танцпол и бар на 30 чел · Летняя концертная веранда на 100 чел</p>
+            </div>
+            <div class="special-cards">
+                <div class="special-card">
+                    <div class="special-content">
+                        <h3>День рождения с командой L!FE</h3>
+                        <ul>
+                            <li>до 100 человек посадка</li>
+                            <li>меню и бар под ваш бюджет</li>
+                            <li>фуршет</li>
+                            <li>закрепленный сервис</li>
+                            <li>артисты любой тематики и величины</li>
+                            <li>сценарий и декорации</li>
+                            <li>закроем зал или всё заведение</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="special-card">
+                    <div class="special-content">
+                        <h3>Свадьба с командой L!FE</h3>
+                        <ul>
+                            <li>менеджер подключается на самой ранней стадии</li>
+                            <li>проработка блюд и напитков</li>
+                            <li>декор на ваш выбор</li>
+                            <li>2 танцевальные зоны</li>
+                            <li>концертная площадка</li>
+                            <li>до 100 человек посадка</li>
+                            <li>меню и бар под ваш бюджет</li>
+                            <li>закрепленный сервис</li>
+                            <li>артисты любой тематики и величины</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="special-card">
+                    <div class="special-content">
+                        <h3>Корпоратив с командой L!FE</h3>
+                        <ul>
+                            <li>организация ведущего и конкурсов</li>
+                            <li>сценарий и индивидуальный декор</li>
+                            <li>до 100 человек посадка</li>
+                            <li>меню и бар под ваш бюджет</li>
+                            <li>фуршет</li>
+                            <li>закрепленный сервис</li>
+                            <li>артисты любой тематики и величины</li>
+                            <li>закроем зал или всё заведение</li>
+                            <li>охрана</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="special-card">
+                    <div class="special-content">
+                        <h3>Аренда площадок</h3>
+                        <ul>
+                            <li>Малый зал — 50 000 ₽</li>
+                            <li>Бар с танцполом — 60 000 ₽</li>
+                            <li>Летняя веранда — 120 000 ₽</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="special-card">
+                    <div class="special-content">
+                        <h3>Кейтеринг</h3>
+                        <ul>
+                            <li>Организация мероприятия в вашем месте</li>
+                            <li>от 50 000 ₽</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="bar-section" class="bars">
+        <div class="bars-container">
+            <div class="bars-header">
+                <h2>НАШ БАР</h2>
+                <p>Ресторан «Питер Life» — это место, где можно не только вкусно поесть, но и хорошо провести время. Здесь звучит отличная музыка, проводятся тематические вечеринки и выступают диджеи.</p>
+            </div>
+            <div class="bar-card">
+                <div class="bar-image" style="max-height: 300px;">
+                    <img src="attached_assets/!ALC00324-Улучшено-Ум. шума-Пано копия.jpg" alt="Бар Питера">
+                    <div class="bar-overlay">
+                        <h3>ПИТЕР LIFE</h3>
+                    </div>
+                </div>
+            </div>
+            <!-- div class="bar-description">
+                <p>В ресторане есть барная стойка, где можно пообщаться с барменом и попробовать авторские коктейли. Кроме того, здесь можно покурить кальян.</p>
+                <p>Современная гастрономия, сочетающая техасскую кухню копчения, азиатский стритфуд и классические блюда в уникальной интерпретации Шефа. В Питер Life вы можете попробовать авторские коктейли и потанцевать под музыку модных DJ в атмосфере белых ночей.</p>
+                <a href="#tablereservation" class="reserve-btn">ЗАБРОНИРОВАТЬ СТОЛ</a>
+            </div -->
+        </div>
+    </section>
+
+    <!-- section class="about">
+        <div class="about-container">
+            <div class="about-content">
+                <h2>KEEP <span class="strike">OFF</span> ON!</h2>
+                <h3>История, которая началась на Невском</h3>
+                <p>и продолжается каждые выходные по сей день</p>
+                <p class="bold">Тусовка никогда не кончится!</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="ticker-section">
+        <div class="ticker-wrap">
+            <div class="ticker">
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+                <div class="ticker-item">питерlife</div>
+            </div-->
+        </div>
+    </section>
+
+    <section id="tablereservation" class="reservation">
+        <div class="reservation-container">
+            <h2>Забронировать стол</h2>
+            <form class="reservation-form">
+                <div class="form-group">
+                    <input type="hidden" id="bar-select" name="bar" value="piter-life">
+                    <input type="text" name="bar-name" value="Питер Life" readonly class="readonly-input">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон</label>
+                    <div class="phone-input">
+                        <span class="phone-prefix">+7</span>
+                        <input type="tel" id="phone" name="phone" placeholder="(___) ___ __ __" required>
+                    </div>
+                </div>
+                <button type="submit" class="reserve-btn" onclick="window.open('https://wa.me/79187589991')">Забронировать</button>
+                <p class="privacy-notice">Нажимая кнопку «Забронировать», вы даёте согласие на обработку ваших персональных данных.</p>
+                <p class="reservation-note">Друзья, в пятницу и субботу в нашем баре действует предварительный резерв столов. Всю подробную информацию уточняйте по телефону у администратора.</p>
+                <p class="reservation-note">P.S. И не расстраивайтесь потом, если не удалось попасть)</p>
+            </form>
+        </div>
+
+
+    <section class="map-section">
+        <h2 style="color: black;">Где мы находимся</h2>
+        <div class="map-container" style="text-align:center;">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A7f5241c84268bc21e4bdc190af74aecf5dc8fa83121c697a22e5c3a85bf06ed8&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>        </div>
+        <h3 style="color: black;">Никольская улица, 28, Ессентуки, Ставропольский край</h3>
+        <h4 style="color: gray;">Мы находимся всего в 10 минутах ходьбы от Центрального рынка. Идите по улице Никольская в сторону дома №28. Вход — с торцевой стороны здания. Есть парковка</h4>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/logo-white.png" alt="Питер LIFE">
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p>Телефон: <a href="tel:+79187589991">+7 (918) 758-99-91</a></p>
+                <p>Email: <a href="mailto:info@piterlife.ru">info@piterlife.ru</a></p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2025 ПИТЕР LIFE. Все права защищены.</p>
+            </div>
+        </div>
+</footer>
+<div id="menuPreviewModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" src="assets/int.jpg" alt="Фото меню">
+            <div class="modal-controls">
+                <button id="prevBtn">&#10094;</button>
+                <button id="nextBtn">&#10095;</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const modal = document.getElementById("menuPreviewModal");
+        const modalImg = document.getElementById("modalImage");
+        const closeBtn = document.querySelector(".close");
+        const images = ["assets/int.jpg", "assets/wall.jpg"];
+        let currentIndex = 0;
+
+        const showImage = (index) => {
+            modalImg.src = images[index];
+        };
+
+        document.getElementById("menuPreviewBtn").addEventListener("click", function (e) {
+            e.preventDefault();
+            modal.style.display = "block";
+            showImage(currentIndex);
+        });
+
+        document.getElementById("prevBtn").onclick = () => {
+            currentIndex = (currentIndex - 1 + images.length) % images.length;
+            showImage(currentIndex);
+        };
+
+        document.getElementById("nextBtn").onclick = () => {
+            currentIndex = (currentIndex + 1) % images.length;
+            showImage(currentIndex);
+        };
+
+        closeBtn.onclick = () => modal.style.display = "none";
+
+        window.onclick = (e) => {
+            if (e.target == modal) {
+                modal.style.display = "none";
+            }
+        };
+    </script>
+<!-- Подключаем jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Скрипт для меню -->
+<script src="js/main.js"></script>

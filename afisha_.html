@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Афиша - ПИТЕР LIFE</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/page.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header id="t-main-content">
+        <div class="navbar">
+            <div class="logo">
+                <a href="/"><img src="assets/logo-white.png" alt="Питер Life"></a>
+            </div>
+            <nav class="main-menu">
+                <ul>
+                    <li><a href="afisha.html" class="active">Афиша</a></li>
+                    <li><a href="about.html">О нас</a></li>
+                    <li><a href="menu.html">Меню</a></li>
+                    <li><a href="bars.html">Наш бар</a></li>
+                    <li><a href="holidays.html">Праздники</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                    <li class="phone"><a href="tel:+79187589991">+7 (918) 758-99-91</a></li>
+                </ul>
+            </nav>
+            <button class="reserve-btn primary-btn">Забронировать стол</button>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <section class="page-hero">
+        <div class="page-hero-content">
+            <h1>АФИША</h1>
+        </div>
+    </section>
+
+    <section class="afisha-page">
+        <div class="afisha-container">
+            <div class="afisha-filters">
+                <button class="filter-btn active" data-filter="all">Все события</button>
+                <button class="filter-btn" data-filter="concerts">Концерты</button>
+                <button class="filter-btn" data-filter="dj">DJ-сеты</button>
+                <button class="filter-btn" data-filter="special">Специальные</button>
+            </div>
+            
+            <div class="afisha-events">
+                <div class="afisha-event" data-category="concerts">
+                    <div class="afisha-event-image">
+                        <img src="https://static.tildacdn.com/tild3732-3030-4138-b337-626338653962/Stereo_PSI_Agency_00.jpg" alt="Ночной концерт">
+                    </div>
+                    <div class="afisha-event-info">
+                        <div class="afisha-event-date">23 МАЯ 2025</div>
+                        <h3>Ночной концерт</h3>
+                        <p>Выступление известного исполнителя с программой лучших хитов и новыми композициями.</p>
+                        <div class="afisha-event-time">
+                            <i class="far fa-clock"></i> 23:00
+                        </div>
+                        <a href="#" class="afisha-event-link">Подробнее</a>
+                    </div>
+                </div>
+                
+                <div class="afisha-event" data-category="special">
+                    <div class="afisha-event-image">
+                        <img src="https://static.tildacdn.com/tild3732-3030-4138-b337-626338653962/Stereo_PSI_Agency_00.jpg" alt="Музыкальная игра «Бинго»">
+                    </div>
+                    <div class="afisha-event-info">
+                        <div class="afisha-event-date">25 МАЯ 2025</div>
+                        <h3>Музыкальная игра «Бинго»</h3>
+                        <p>Интерактивная музыкальная игра с призами и отличной атмосферой. Не пропустите!</p>
+                        <div class="afisha-event-time">
+                            <i class="far fa-clock"></i> 20:00
+                        </div>
+                        <a href="#" class="afisha-event-link">Подробнее</a>
+                    </div>
+                </div>
+                
+                <div class="afisha-event" data-category="dj">
+                    <div class="afisha-event-image">
+                        <img src="https://static.tildacdn.com/tild3732-3030-4138-b337-626338653962/Stereo_PSI_Agency_00.jpg" alt="DJ ночь">
+                    </div>
+                    <div class="afisha-event-info">
+                        <div class="afisha-event-date">27 МАЯ 2025</div>
+                        <h3>DJ ночь</h3>
+                        <p>Лучшие хиты и танцевальная музыка от топовых диджеев Петербурга.</p>
+                        <div class="afisha-event-time">
+                            <i class="far fa-clock"></i> 22:00
+                        </div>
+                        <a href="#" class="afisha-event-link">Подробнее</a>
+                    </div>
+                </div>
+                
+                <div class="afisha-event" data-category="concerts">
+                    <div class="afisha-event-image">
+                        <img src="https://static.tildacdn.com/tild3732-3030-4138-b337-626338653962/Stereo_PSI_Agency_00.jpg" alt="Живая музыка">
+                    </div>
+                    <div class="afisha-event-info">
+                        <div class="afisha-event-date">30 МАЯ 2025</div>
+                        <h3>Живая музыка</h3>
+                        <p>Выступление живого коллектива с каверами на известные хиты и авторскими композициями.</p>
+                        <div class="afisha-event-time">
+                            <i class="far fa-clock"></i> 21:00
+                        </div>
+                        <a href="#" class="afisha-event-link">Подробнее</a>
+                    </div>
+                </div>
+                
+                <div class="afisha-event" data-category="special">
+                    <div class="afisha-event-image">
+                        <img src="https://static.tildacdn.com/tild3732-3030-4138-b337-626338653962/Stereo_PSI_Agency_00.jpg" alt="Гастрономический ужин">
+                    </div>
+                    <div class="afisha-event-info">
+                        <div class="afisha-event-date">2 ИЮНЯ 2025</div>
+                        <h3>Гастрономический ужин</h3>
+                        <p>Специальный ужин от шеф-повара с дегустацией авторских блюд и подбором напитков.</p>
+                        <div class="afisha-event-time">
+                            <i class="far fa-clock"></i> 19:00
+                        </div>
+                        <a href="#" class="afisha-event-link">Подробнее</a>
+                    </div>
+                </div>
+                
+                <div class="afisha-event" data-category="dj">
+                    <div class="afisha-event-image">
+                        <img src="https://static.tildacdn.com/tild3732-3030-4138-b337-626338653962/Stereo_PSI_Agency_00.jpg" alt="Техно вечеринка">
+                    </div>
+                    <div class="afisha-event-info">
+                        <div class="afisha-event-date">5 ИЮНЯ 2025</div>
+                        <h3>Техно вечеринка</h3>
+                        <p>Электронная музыка от лучших техно диджеев города. Танцуем до утра!</p>
+                        <div class="afisha-event-time">
+                            <i class="far fa-clock"></i> 23:00
+                        </div>
+                        <a href="#" class="afisha-event-link">Подробнее</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <h2>НЕ ПРОПУСТИТЕ НАШИ СОБЫТИЯ</h2>
+            <p>Забронируйте стол заранее, чтобы обеспечить себе место на самых горячих мероприятиях</p>
+            <a href="#tablereservation" class="reserve-btn">ЗАБРОНИРОВАТЬ СТОЛ</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="assets/logo-white.png" alt="Питер LIFE">
+            </div>
+            <div class="footer-social">
+                <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-vk"></i></a>
+                <a href="#" class="social-icon"><i class="fab fa-telegram-plane"></i></a>
+            </div>
+            <div class="footer-contact">
+                <p>Телефон: <a href="tel:+79187589991">+7 (918) 758-99-91</a></p>
+                <p>Email: <a href="mailto:info@piterlife.ru">info@piterlife.ru</a></p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2024 ПИТЕР LIFE. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div id="modal-overlay" class="modal-overlay">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Забронировать стол</h2>
+            <form class="modal-form">
+                <div class="form-group">
+                    <label for="modal-bar-select">Выберите бар из списка...</label>
+                    <select id="modal-bar-select" name="bar">
+                        <option value="" disabled selected>Выберите бар</option>
+                        <option value="piter-life">Питер Life</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="modal-phone">Телефон</label>
+                    <div class="phone-input">
+                        <span class="phone-prefix">+7</span>
+                        <input type="tel" id="modal-phone" name="phone" placeholder="(___) ___ __ __" required>
+                    </div>
+                </div>
+                <button type="submit" class="reserve-btn">Забронировать</button>
+                <p class="privacy-notice">Нажимая кнопку «Забронировать», вы даёте согласие на обработку ваших персональных данных.</p>
+            </form>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+            const events = document.querySelectorAll('.afisha-event');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remove active class from all buttons
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Add active class to current button
+                    this.classList.add('active');
+                    
+                    const filter = this.getAttribute('data-filter');
+                    
+                    // Show all events if filter is 'all'
+                    if (filter === 'all') {
+                        events.forEach(event => {
+                            event.style.display = 'block';
+                        });
+                    } else {
+                        // Filter events based on category
+                        events.forEach(event => {
+                            if (event.getAttribute('data-category') === filter) {
+                                event.style.display = 'block';
+                            } else {
+                                event.style.display = 'none';
+                            }
+                        });
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
